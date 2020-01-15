@@ -1,54 +1,53 @@
 import React, {useState} from 'react';
 
-const EventPractive2 = () => {
-    const [make, setMake] = useState({
+const EventPractice2 = () => {
+    const [form, setForm] = useState({
         username : '',
         message : ''
     });
-    const {username, message} = make;
-
+    const {username, message} = form;
     const onChange = (e) => {
         const nextForm = {
-            ...make,
+            ...form,
             [e.target.name] : e.target.value
         };
-        setMake(nextForm);
+        setForm(nextForm);
     };
     const onClick = () => {
-        alert(username + ' ' +message);
-        setMake({
+        console.log(username + '-' + message);
+        setForm({
             username : '',
             message : ''
-        });
+        })
     };
-    const onkeyPress = (e) => {
+    const onKeyPress = (e) => {
         if(e.key === 'Enter'){
             onClick();
         }
     };
 
-    return (
+    return(
         <div>
-            <h1>이벤트 연습</h1>
+            <h1>해리포터 주문을 써보자</h1>
             <input
                 type = "text"
                 name = "username"
-                placeholder ="최애"
+                placeholder = "해리포터"
                 value = {username}
-                onKeyPress = {onkeyPress}
                 onChange = {onChange}
+                onKeyPress = {onKeyPress}
             />
             <input
                 type = "text"
                 name = "message"
-                placeholder ="에게 할 말"
+                placeholder = "주문을 입력하세요"
                 value = {message}
-                onKeyPress = {onkeyPress}
                 onChange = {onChange}
+                onKeyPress = {onKeyPress}
             />
-            <button onClick = {onClick}>전송</button>
+            <button onClick = {onClick}>아씨오</button>
         </div>
     )
 }
 
-export default EventPractive2;
+export default EventPractice2;

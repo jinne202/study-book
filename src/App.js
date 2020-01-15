@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
+//import MyComponent from './MyComponent';
+//import Counter from './Counter';
+//import Say from "./Say";
+//import EventPractice2 from "./EventPractice2";
+//import ValidationSample from './ValidationSample';
+//import CreateRef from './CreateRef';
+//import ScrollBox from './ScrollBox';
+import InteractionSample from './InteractionSample'
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div>
+        <InteractionSample/>
+      </div>
+    )
+  }
 }
 
 export default App;

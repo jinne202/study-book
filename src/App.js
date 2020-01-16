@@ -13,6 +13,7 @@ import React from "react";
 //import Info from './hooks-tutorial/Info';
 //import CounterReducer from './hooks-tutorial/CounterReducer'
 import InfoReducer from './hooks-tutorial/InfoReducer'
+//import Average from './hooks-tutorial/Average'
 import "./App.css";
 
 

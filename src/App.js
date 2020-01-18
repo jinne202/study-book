@@ -12,14 +12,15 @@ import React from "react";
 //import Counter from './hooks-tutorial/Counter';
 //import Info from './hooks-tutorial/Info';
 //import CounterReducer from './hooks-tutorial/CounterReducer'
-import InfoReducer from './hooks-tutorial/InfoReducer'
+//import InfoReducer from './hooks-tutorial/InfoReducer'
 //import Average from './hooks-tutorial/Average'
+import SassComponent from './styling-react/SassComponent'
 import "./App.css";
 
 
 const App = () => {
   return (
-    <InfoReducer/>
+    <SassComponent/>
   )
 }
 
